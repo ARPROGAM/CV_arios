@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Full Name] - CV/Resume</title>
+    <style>
+        /* General Body & Container Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #007bff;
+        }
+
+        header h1 {
+            color: #2c3e50;
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1.5px;
+        }
+
+        header p.title {
+            color: #007bff;
+            font-size: 1.4em;
+            margin: 5px 0 15px;
+        }
+
+        .contact-info {
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .contact-info a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 8px;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
+        section {
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        section h2 {
+            color: #007bff;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        section h2::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 100%;
+            width: 5px;
+            background-color: #007bff;
+            border-radius: 3px;
+        }
+
+        /* Lists & Paragraphs */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .skill-category h3 {
+            color: #444;
+            font-size: 1.2em;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            border-bottom: 1px dotted #ccc;
+            padding-bottom: 5px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.95em;
+        }
+
+        .skill-list li {
+            background-color: #eef7ff;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #007bff;
+            white-space: nowrap; /* Prevents wrapping mid-skill */
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .experience-item:last-of-type, .project-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .experience-item h3, .project-item h3 {
+            color: #2c3e50;
+            margin: 0 0 5px;
+            font-size: 1.3em;
+        }
+
+        .experience-item p.role, .project-item p.role {
+            font-weight: bold;
+            color: #555;
+            margin: 0 0 5px;
+        }
+
+        .experience-item p.duration, .project-item p.duration {
+            font-style: italic;
+            color: #777;
+            margin: 0 0 10px;
+            font-size: 0.9em;
+        }
+
+        .experience-item ul li, .project-item ul li {
+            list-style: disc;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                margin: 10px auto;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            header p.title {
+                font-size: 1.2em;
+            }
+            .contact-info a {
+                display: block;
+                margin: 5px 0;
+            }
+            section h2 {
+                font-size: 1.4em;
+            }
+            .skill-list {
+                flex-direction: column; /* Stack skills on small screens */
+                gap: 5px;
+            }
+            .skill-list li {
+                width: fit-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>[YOUR FULL NAME]</h1>
+            <p class="title">Architectural Visualization Specialist | 3D Modeler & Renderer | Python & AR Developer</p>
+            <div class="contact-info">
+                <span><a href="mailto:[YOUR_EMAIL@EXAMPLE.COM]">[YOUR_EMAIL@EXAMPLE.COM]</a></span> |
+                <span>[Your Phone Number, e.g., +998 90 123 45 67]</span> |
+                <span>[Your City, Uzbekistan]</span> <br>
+                <a href="[YOUR_LINKEDIN_PROFILE_URL]" target="_blank">LinkedIn</a> |
+                <a href="[YOUR_GITHUB_PROFILE_URL]" target="_blank">GitHub</a> |
+                <a href="[YOUR_GITHUB_PAGES_PORTFOLIO_URL]" target="_blank">Portfolio</a>
+            </div>
+        </header>
+
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>
+                Highly motivated and versatile professional with a strong foundation in architectural design, advanced 3D visualization, and practical programming. Expected to graduate in 2025 with a Bachelor of Science in Architecture. Proficient in industry-leading software including Revit, Lumion, AutoCAD, 3ds Max, and Blender, I excel at transforming conceptual designs into photorealistic renders and precise technical drawings. My technical acumen extends to Python and HTML for efficient scripting, web solutions, and innovative Augmented Reality (AR) development. I am a proactive problem-solver, detail-oriented, and dedicated to delivering high-quality, impactful results for diverse projects.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-category">
+                <h3>Software Proficiency</h3>
+                <ul class="skill-list">
+                    <li>Revit</li>
+                    <li>Lumion</li>
+                    <li>AutoCAD</li>
+                    <li>3ds Max</li>
+                    <li>Blender</li>
+                    <li>V-Ray (if applicable)</li>
+                    <li>SketchUp (if applicable)</li>
+                    <li>Enscape (if applicable)</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Programming & Development</h3>
+                <ul class="skill-list">
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Augmented Reality (AR)</li>
+                    <li>Web Design</li>
+                    <li>Scripting & Automation</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Specializations</h3>
+                <ul class="skill-list">
+                    <li>Architectural Visualization</li>
+                    <li>3D Modeling & Rendering</li>
+                    <li>BIM (Building Information Modeling)</li>
+                    <li>CAD Drafting & Detailing</li>
+                    <li>Hyperrealistic Rendering</li>
+                    <li>Interior & Exterior Design</li>
+                    <li>IT Support & Troubleshooting</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Problem-Solving</li>
+                    <li>Communication</li>
+                    <li>Detail-Oriented</li>
+                    <li>Time Management</li>
+                    <li>Adaptability</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <h3>Bachelor of Science (B.Sc.) in Architecture</h3>
+                    <p class="role">[Your University Name], [Your City, Uzbekistan]</p>
+                    <p class="duration">Expected Graduation: 2025</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Freelance 3D Artist & Developer</h3>
+                <p class="role">Self-Employed</p>
+                <p class="duration">[Start Date, e.g., Jan 2023] – Present</p>
+                <ul>
+                    <li>Executed diverse freelance projects, including architectural renderings, 3D model creation, and technical drafting for various clients.</li>
+                    <li>Developed custom Python scripts for data automation and provided front-end web development support using HTML/CSS.</li>
+                    <li>Collaborated effectively with clients to understand project requirements and deliver high-quality results within specified deadlines.</li>
+                    <li>Leveraged proficiency in Revit, Lumion, 3ds Max, Blender, and AutoCAD to meet specific project needs.</li>
+                </ul>
+            </div>
+            <!-- Add more relevant work experience here if you have any. -->
+        </section>
+
+        <section id="projects">
+            <h2>Projects & Portfolio</h2>
+            <p>
+                Explore my diverse range of completed projects, showcasing my expertise in architectural visualization, 3D modeling, rendering, and programming.
+                This includes photorealistic renders of residential and commercial buildings, detailed 3D assets, automated Python scripts, and interactive AR concepts.
+            </p>
+            <p style="text-align: center; margin-top: 20px;">
+                <a href="[YOUR_GITHUB_PAGES_PORTFOLIO_URL]" target="_blank" style="padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">View My Full Portfolio Here</a>
+            </p>
+        </section>
+
+        <section id="certifications">
+            <h2>Certifications</h2>
+            <ul>
+                <li>[Certification Name, e.g., Autodesk Certified User: Revit Architecture] - [Issuing Organization], [Year]</li>
+                <li>[Another Certification, if applicable] - [Issuing Organization], [Year]</li>
+                <!-- Add any relevant certifications you have here -->
+            </ul>
+        </section>
+
+        <section id="languages">
+            <h2>Languages</h2>
+            <ul>
+                <li>Uzbek (Native)</li>
+                <li>English (Fluent)</li>
+                <!-- Add other languages if applicable -->
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
